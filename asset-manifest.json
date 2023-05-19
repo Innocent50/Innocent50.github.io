@@ -1,19 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.778eeed7.css",
-    "main.js": "/static/js/main.e4741ff3.js",
+    "main.js": "/static/js/main.f7e67114.js",
     "static/js/787.4b24f717.chunk.js": "/static/js/787.4b24f717.chunk.js",
     "static/media/profile.png": "/static/media/profile.cedff555f6a55c094a60.png",
     "static/media/bank.png": "/static/media/bank.5a5e3c4d66c2b992206e.png",
+    "static/media/unrwanda.png": "/static/media/unrwanda.d1caae40e74aee8b0373.png",
     "static/media/minict3.png": "/static/media/minict3.e2fa5551cbc948adee8b.png",
     "static/media/gggi.png": "/static/media/gggi.95ed9de7a51d2e563666.png",
+    "static/media/cmu.png": "/static/media/cmu.134c75600b8f8f8f8b8c.png",
     "index.html": "/index.html",
     "main.778eeed7.css.map": "/static/css/main.778eeed7.css.map",
-    "main.e4741ff3.js.map": "/static/js/main.e4741ff3.js.map",
+    "main.f7e67114.js.map": "/static/js/main.f7e67114.js.map",
     "787.4b24f717.chunk.js.map": "/static/js/787.4b24f717.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.778eeed7.css",
-    "static/js/main.e4741ff3.js"
+    "static/js/main.f7e67114.js"
   ]
 }
