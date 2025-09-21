@@ -1,0 +1,330 @@
+{% extends "base.html" %}
+
+{% block title %}Contact - {{ profile.name }}{% endblock %}
+
+{% block content %}
+<!-- Contact Hero Section -->
+<section class="contact-hero py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                <h1 class="display-4 fw-bold mb-4">Get In Touch</h1>
+                <p class="lead">Ready to discuss your next project? I'd love to hear from you!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Content -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Information -->
+            <div class="col-lg-5 mb-5" data-aos="fade-right">
+                <div class="contact-info">
+                    <h3 class="h4 fw-semibold mb-4">Let's Connect</h3>
+                    <p class="text-muted mb-4">
+                        Whether you have a project in mind, want to collaborate, or just want to say hello, 
+                        I'm always excited to connect with fellow professionals and potential clients.
+                    </p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item d-flex align-items-center mb-4">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-envelope fa-lg text-primary"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h6 class="fw-semibold mb-1">Email</h6>
+                                <a href="mailto:{{ profile.email }}" class="text-muted text-decoration-none">
+                                    {{ profile.email }}
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item d-flex align-items-center mb-4">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-phone fa-lg text-primary"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h6 class="fw-semibold mb-1">Phone</h6>
+                                <a href="tel:{{ profile.phone }}" class="text-muted text-decoration-none">
+                                    {{ profile.phone }}
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item d-flex align-items-center mb-4">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-map-marker-alt fa-lg text-primary"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h6 class="fw-semibold mb-1">Location</h6>
+                                <span class="text-muted">{{ profile.location }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links mt-4">
+                        <h6 class="fw-semibold mb-3">Follow Me</h6>
+                        <a href="{{ profile.linkedin }}" class="btn btn-outline-primary me-2 mb-2" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin-in me-1"></i>LinkedIn
+                        </a>
+                        <a href="{{ profile.github }}" class="btn btn-outline-primary me-2 mb-2" target="_blank" rel="noopener">
+                            <i class="fab fa-github me-1"></i>GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="col-lg-7" data-aos="fade-left">
+                <div class="contact-form">
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-4">
+                            <h4 class="card-title fw-semibold mb-4">Send Me a Message</h4>
+                            
+                            <form id="contactForm" novalidate>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="firstName" class="form-label">First Name *</label>
+                                            <input type="text" class="form-control" id="firstName" name="firstName" required>
+                                            <div class="invalid-feedback">
+                                                Please provide your first name.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="lastName" class="form-label">Last Name *</label>
+                                            <input type="text" class="form-control" id="lastName" name="lastName" required>
+                                            <div class="invalid-feedback">
+                                                Please provide your last name.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid email address.
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject *</label>
+                                    <select class="form-select" id="subject" name="subject" required>
+                                        <option value="">Choose a subject...</option>
+                                        <option value="project">Project Inquiry</option>
+                                        <option value="collaboration">Collaboration</option>
+                                        <option value="consultation">Consultation</option>
+                                        <option value="job">Job Opportunity</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a subject.
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="budget" class="form-label">Project Budget (Optional)</label>
+                                    <select class="form-select" id="budget" name="budget">
+                                        <option value="">Select budget range...</option>
+                                        <option value="under-5k">Under $5,000</option>
+                                        <option value="5k-10k">$5,000 - $10,000</option>
+                                        <option value="10k-25k">$10,000 - $25,000</option>
+                                        <option value="25k-50k">$25,000 - $50,000</option>
+                                        <option value="over-50k">Over $50,000</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message *</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5" 
+                                              placeholder="Tell me about your project, goals, timeline, or anything else you'd like to discuss..." required></textarea>
+                                    <div class="invalid-feedback">
+                                        Please provide a message.
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="privacy" name="privacy" required>
+                                    <label class="form-check-label" for="privacy">
+                                        I agree to the <a href="#" class="text-primary">privacy policy</a> and 
+                                        consent to my data being processed. *
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        You must agree to our privacy policy.
+                                    </div>
+                                </div>
+                                
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h2 class="display-6 fw-bold mb-3">Frequently Asked Questions</h2>
+                    <p class="text-muted">Quick answers to common questions</p>
+                </div>
+                
+                <div class="accordion" id="faqAccordion" data-aos="fade-up" data-aos-delay="200">
+                    <div class="accordion-item border-0 shadow-sm mb-3">
+                        <h2 class="accordion-header" id="faq1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+                                    data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                What types of projects do you work on?
+                            </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse show" 
+                             aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                I specialize in data science and machine learning projects including predictive modeling, 
+                                data analysis, dashboard development, automation, and AI-powered solutions. I work with 
+                                businesses of all sizes across various industries.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item border-0 shadow-sm mb-3">
+                        <h2 class="accordion-header" id="faq2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                    data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                How long does a typical project take?
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" 
+                             aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Project timelines vary depending on complexity and scope. Simple analysis projects might 
+                                take 1-2 weeks, while comprehensive machine learning solutions can take 2-3 months. 
+                                I'll provide a detailed timeline estimate after understanding your requirements.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item border-0 shadow-sm mb-3">
+                        <h2 class="accordion-header" id="faq3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                    data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                Do you offer ongoing support and maintenance?
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" 
+                             aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, I offer various support packages including model monitoring, performance optimization, 
+                                updates, and training. We can discuss the best support plan for your specific needs and budget.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item border-0 shadow-sm mb-3">
+                        <h2 class="accordion-header" id="faq4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                    data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                What's your typical response time?
+                            </button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse" 
+                             aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                I typically respond to all inquiries within 24 hours during business days. 
+                                For urgent matters, feel free to mention it in your message, and I'll do my best 
+                                to respond sooner.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+// Form validation and submission
+(function() {
+    'use strict';
+    
+    const form = document.getElementById('contactForm');
+    
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        
+        if (form.checkValidity()) {
+            // Form is valid, submit it
+            submitForm();
+        }
+        
+        form.classList.add('was-validated');
+    });
+    
+    async function submitForm() {
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+        
+        // Show loading state
+        submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Sending...';
+        submitBtn.disabled = true;
+        
+        try {
+            const formData = new FormData(form);
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                body: formData
+            });
+            
+            if (response.ok) {
+                showAlert('Thank you! Your message has been sent successfully. I\'ll get back to you soon.', 'success');
+                form.reset();
+                form.classList.remove('was-validated');
+            } else {
+                throw new Error('Failed to send message');
+            }
+        } catch (error) {
+            showAlert('Sorry, there was an error sending your message. Please try again or contact me directly.', 'danger');
+        } finally {
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+        }
+    }
+    
+    function showAlert(message, type) {
+        const alertDiv = document.createElement('div');
+        alertDiv.className = `alert alert-${type} alert-dismissible fade show`;
+        alertDiv.innerHTML = `
+            ${message}
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        `;
+        
+        form.insertBefore(alertDiv, form.firstChild);
+        
+        // Auto-dismiss after 5 seconds
+        setTimeout(() => {
+            if (alertDiv.parentNode) {
+                alertDiv.remove();
+            }
+        }, 5000);
+    }
+})();
+</script>
+{% endblock %}
