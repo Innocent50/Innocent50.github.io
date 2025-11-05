@@ -4,7 +4,7 @@ Professional Portfolio Website for Innocent Nzimenyera
 Built with Flask - A modern, responsive data scientist portfolio
 """
 
-from flask import Flask, render_template, send_from_directory, jsonify
+from flask import Flask, render_template, send_from_directory
 import os
 from datetime import datetime
 
@@ -13,6 +13,7 @@ app = Flask(__name__)
 # Configuration
 app.config['SECRET_KEY'] = 'your-secret-key-change-in-production'
 
+
 # Portfolio Data
 PROFILE_DATA = {
     'name': 'Innocent Nzimenyera',
@@ -20,7 +21,7 @@ PROFILE_DATA = {
     'tagline': 'Digital and data leader with expertise in designing scalable data pipelines, managing databases, and building cloud-based architectures',
     'bio': """Digital and data leader with expertise in designing scalable data pipelines, managing databases, and building cloud-based architectures. Skilled in SQL, Python, and data integration to support advanced analytics and decision-making. Strong background in automation, ETL processes, and data governance with experience delivering solutions for international organizations, governments, and research institutions. Adept at bridging data engineering with applied AI and statistical methods to improve efficiency, data quality, and stakeholder impact.""",
     'location': 'Kigali, Rwanda',
-    'email': 'innocent.nzimenyera@email.com',  # Update with actual email from CV if needed
+    'email': 'innocentnzime42@gmail.com',  # Update with actual email from CV if needed
     'linkedin': 'https://linkedin.com/in/innocent-nzimenyera',  # Update with actual LinkedIn
     'github': 'https://github.com/Innocent50',  # Update with actual GitHub
     'phone': '+250 781 946 105'
@@ -200,12 +201,6 @@ def resume():
                          experience=EXPERIENCE,
                          education=EDUCATION)
 
-@app.route('/api/contact', methods=['POST'])
-def api_contact():
-    """API endpoint for contact form submissions"""
-    # This would typically handle form submissions
-    # For now, return a simple response
-    return jsonify({'status': 'success', 'message': 'Message received!'})
 
 @app.route('/download/cv')
 def download_cv():

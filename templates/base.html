@@ -96,30 +96,30 @@
             <div class="row">
                 <div class="col-lg-6">
                     <h5 class="fw-bold mb-3">{{ profile.name }}</h5>
-                    <p class="text-light-emphasis">{{ profile.tagline }}</p>
+                    <p class="text-light opacity-90 mb-4">{{ profile.tagline }}</p>
                     <div class="social-links">
-                        <a href="{{ profile.linkedin }}" class="text-light me-3" target="_blank" rel="noopener">
+                        <a href="{{ profile.linkedin }}" class="text-light me-3" target="_blank" rel="noopener" style="opacity: 0.9;">
                             <i class="fab fa-linkedin-in fa-lg"></i>
                         </a>
-                        <a href="{{ profile.github }}" class="text-light me-3" target="_blank" rel="noopener">
+                        <a href="{{ profile.github }}" class="text-light me-3" target="_blank" rel="noopener" style="opacity: 0.9;">
                             <i class="fab fa-github fa-lg"></i>
                         </a>
-                        <a href="mailto:{{ profile.email }}" class="text-light me-3">
+                        <a href="mailto:{{ profile.email }}" class="text-light me-3" style="opacity: 0.9;">
                             <i class="fas fa-envelope fa-lg"></i>
                         </a>
-                        <a href="tel:{{ profile.phone }}" class="text-light">
+                        <a href="tel:{{ profile.phone }}" class="text-light" style="opacity: 0.9;">
                             <i class="fas fa-phone fa-lg"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-6 text-lg-end">
                     <div class="mb-3">
-                        <a href="{{ url_for('index') }}" class="text-light text-decoration-none me-3">Home</a>
-                        <a href="{{ url_for('projects') }}" class="text-light text-decoration-none me-3">Projects</a>
-                        <a href="{{ url_for('contact') }}" class="text-light text-decoration-none">Contact</a>
+                        <a href="{{ url_for('index') }}" class="text-light text-decoration-none me-3" style="opacity: 0.9;">Home</a>
+                        <a href="{{ url_for('projects') }}" class="text-light text-decoration-none me-3" style="opacity: 0.9;">Projects</a>
+                        <a href="{{ url_for('contact') }}" class="text-light text-decoration-none" style="opacity: 0.9;">Contact</a>
                     </div>
-                    <p class="text-light-emphasis mb-0">
-                        &copy; {{ current_year or 2024 }} {{ profile.name }}. All rights reserved.
+                    <p class="text-light mb-0" style="opacity: 0.85;">
+                        &copy; {{ current_year or 2025 }} {{ profile.name }}. All rights reserved.
                     </p>
                 </div>
             </div>
