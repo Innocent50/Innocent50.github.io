@@ -211,10 +211,10 @@ def api_contact():
 def download_cv():
     """Download CV/Resume file"""
     try:
-        return send_from_directory('static/files', 'CV_Innocent Nzimenyera.pdf', as_attachment=True)
+        return send_from_directory('static/files', 'CV_Innocent.pdf', as_attachment=True)
     except FileNotFoundError:
         # Fallback if file not found
-        return send_from_directory('static/media', 'CV_Innocent Nzimenyera.pdf', as_attachment=True)
+        return send_from_directory('static/media', 'CV_Innocent.pdf', as_attachment=True)
 
 if __name__ == '__main__':
     app.run(debug=True, host='localhost', port=8080)
