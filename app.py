@@ -166,6 +166,49 @@ PROJECTS = [
     }
 ]
 
+PUBLICATIONS = [
+    {
+        'title': 'AI Ready – Analysis Towards a Standardized Readiness Framework 2026',
+        'url': 'https://www.itu.int/dms_pub/itu-t/opb/ai4g/T-AI4G-AI4GOOD-2025-6-PDF-E.pdf',
+        'year': '2026'
+    },
+    {
+        'title': 'Green Growth Index – A Comparative Assessment of Green Growth Performance in the African Least Developed Countries (LDCs)',
+        'url': 'https://greengrowthindex.gggi.org/wp-content/uploads/2026/01/LDC-Green-Growth-Index-layout-A4.pdf',
+        'year': '2026'
+    },
+    {
+        'title': '2025 AI for Good Innovate for Impact Report',
+        'url': 'https://www.itu.int/net/epub/TSB/2025-AI-for-Good-Innovate-for-Impact/index.html',
+        'year': '2025'
+    },
+    {
+        'title': 'Network Science and Explainable AI-based Life Cycle Management of Sustainability Models',
+        'url': 'https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0300531',
+        'year': '2024'
+    },
+    {
+        'title': 'Report for the "2024 AI For Good" Initiative, Focusing on the UN\'s Sustainable Development Goals (SDGs)',
+        'url': 'https://www.itu.int/net/epub/TSB/2024-AI-for-Good-Innovate-for-Impact-final-report/index.html#p=4',
+        'year': '2024'
+    },
+    {
+        'title': 'Kenya National Green Growth Index 2023',
+        'url': 'https://kenya-greengrowthindex-79d818729eb1.herokuapp.com/assets/publications/TNT%26EP%20and%20GGGI%202023%20Kenya%20Green%20Growth%20Index.pdf',
+        'year': '2023'
+    },
+    {
+        'title': 'Ghana National Green Growth Index 2023',
+        'url': 'https://ghana-greengrowthindex-8af980b05521.herokuapp.com/assets/publications/Ghana%20Green%20Growth%20Index_report.pdf',
+        'year': '2023'
+    },
+    {
+        'title': 'Green and Blue Economy Synergy – Concepts and Methods for the OECS Green-Blue Growth Index',
+        'url': 'https://gggi.org/report/green-and-blue-economy-synergy-concepts-and-methods-for-the-oecs-green-blue-growth-index/',
+        'year': '2023'
+    }
+]
+
 # Routes
 @app.route('/')
 def index():
@@ -175,7 +218,8 @@ def index():
                          skills=SKILLS,
                          experience=EXPERIENCE,
                          education=EDUCATION,
-                         projects=PROJECTS)
+                         projects=PROJECTS,
+                         publications=PUBLICATIONS)
 
 # Removed separate about page - content is on main page
 

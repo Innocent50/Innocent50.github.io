@@ -467,6 +467,30 @@ section {
     font-weight: 500;
 }
 
+/* ===== PUBLICATIONS SECTION ===== */
+.publication-item .card {
+    transition: all var(--transition-normal);
+    border-left: 4px solid var(--primary-color) !important;
+}
+
+.publication-item .card:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-lg) !important;
+}
+
+.publication-item .card-title a {
+    transition: color var(--transition-fast);
+}
+
+.publication-item .card-title a:hover {
+    color: var(--primary-color) !important;
+}
+
+.publication-item .badge {
+    font-size: 0.875rem;
+    padding: 0.5rem 0.75rem;
+}
+
 /* ===== TIMELINE ===== */
 .timeline {
     position: relative;
