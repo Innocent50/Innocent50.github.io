@@ -155,6 +155,14 @@ PROJECTS = [
         'github': '#',
         'demo': 'https://ethiopia-csmfl-dashboard.onrender.com/',
         'image': '/static/images/CSMFL_Project.jpg'
+    },
+    {
+        'title': 'Regional and National Indexes',
+        'description': 'Green Growth Index measures country performance in achieving sustainability targets including Sustainable Development Goals, Paris Climate Agreement, and Aichi Biodiversity Targets for four green growth dimensions: efficient and sustainable resource use, natural capital protection, green economic opportunities and social inclusion.',
+        'technologies': ['Python', 'Data Analysis', 'Sustainability Metrics', 'Index Development'],
+        'github': '#',
+        'demo': 'https://ggindex-simtool.gggi.org/projects',
+        'image': '/static/images/differents_indexes.jpg'
     }
 ]
 

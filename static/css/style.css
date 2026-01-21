@@ -340,12 +340,17 @@ section {
 /* ===== PROJECTS SECTION ===== */
 /* Projects Carousel Styles */
 #projectsCarousel {
-    padding: 2rem 0;
+    padding: 2rem 0 3rem;
+    position: relative;
 }
 
 #projectsCarousel .carousel-item {
-    padding: 1rem;
-    min-height: 500px;
+    padding: 1rem 0.5rem;
+    min-height: 600px;
+}
+
+#projectsCarousel .carousel-item.active {
+    display: block;
 }
 
 #projectsCarousel .carousel-control-prev,
@@ -381,7 +386,8 @@ section {
 }
 
 #projectsCarousel .carousel-indicators {
-    margin-bottom: -2rem;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
 }
 
 #projectsCarousel .carousel-indicators button {
@@ -398,6 +404,12 @@ section {
     background-color: var(--primary-dark);
 }
 
+@media (max-width: 991px) {
+    #projectsCarousel .carousel-item .col-lg-5 {
+        margin-bottom: 2rem;
+    }
+}
+
 @media (max-width: 768px) {
     #projectsCarousel .carousel-control-prev {
         left: 10px;
@@ -406,7 +418,7 @@ section {
         right: 10px;
     }
     #projectsCarousel .carousel-item {
-        min-height: 400px;
+        min-height: auto;
     }
 }
 
