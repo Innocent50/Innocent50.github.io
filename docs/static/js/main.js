@@ -273,6 +273,50 @@
         });
     }
 
+    // Initialize projects carousel with auto-slide
+    function initProjectsCarousel() {
+        const carousel = document.getElementById('projectsCarousel');
+        if (!carousel) return;
+
+        // Initialize Bootstrap carousel
+        const bsCarousel = new bootstrap.Carousel(carousel, {
+            interval: 2000, // 2 seconds
+            ride: 'carousel',
+            wrap: true,
+            keyboard: true,
+            pause: 'hover' // Pause on hover
+        });
+
+        // Ensure smooth transitions
+        carousel.addEventListener('slide.bs.carousel', function (e) {
+            // Add fade effect if needed
+        });
+
+        // Optional: Reset interval after manual navigation
+        const prevBtn = carousel.querySelector('.carousel-control-prev');
+        const nextBtn = carousel.querySelector('.carousel-control-next');
+        const indicators = carousel.querySelectorAll('.carousel-indicators button');
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', function() {
+                bsCarousel.prev();
+            });
+        }
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', function() {
+                bsCarousel.next();
+            });
+        }
+
+        // Reset interval when indicator is clicked
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', function() {
+                bsCarousel.to(index);
+            });
+        });
+    }
+
     // Initialize all functionality
     function init() {
         // Event listeners
@@ -317,6 +361,7 @@
         animateSkillBars();
         animateCounters();
         initThemeSwitcher();
+        initProjectsCarousel();
 
         // Initial calls
         handleNavbarScroll();

@@ -147,6 +147,14 @@ PROJECTS = [
         'github': 'https://github.com/Innocent50/ai-simulation-tool',
         'demo': 'https://ggindex-simtool.gggi.org/SimulationDashBoard/simulation',
         'image': '/static/images/sim.jpg'
+    },
+    {
+        'title': 'CSMFL Project Dashboard',
+        'description': 'Conservation and Sustainable Management of Forested Landscapes (CSMFL) Project in Ethiopia, Operating across 24 kebeles in Oromia and Southwest Ethiopia, this project represents a transformative approach to forest landscape management, integrating biodiversity conservation with sustainable development and community empowerment.',
+        'technologies': ['Python', 'Data Visualization', 'Dashboard Development', 'Sustainable Development'],
+        'github': '#',
+        'demo': '#',
+        'image': '/static/images/CSMFL_Project.jpg'
     }
 ]
 

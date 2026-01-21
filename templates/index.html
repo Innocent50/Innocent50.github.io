@@ -119,37 +119,68 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            {% for project in projects[:3] %}
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="{{ loop.index0 * 100 }}">
-                <div class="project-card card h-100 border-0 shadow-sm">
-                    <div class="project-image">
-                        <img src="{{ project.image or url_for('static', filename='images/project-placeholder.jpg') }}" 
-                             class="card-img-top" alt="{{ project.title }}">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                {% if project.demo != '#' %}
-                                <a href="{{ project.demo }}" class="btn btn-primary btn-sm me-2" target="_blank">
-                                    <i class="fas fa-external-link-alt me-1"></i>Demo
-                                </a>
-                                {% endif %}
-                                <a href="{{ project.github }}" class="btn btn-outline-light btn-sm" target="_blank">
-                                    <i class="fab fa-github me-1"></i>Code
-                                </a>
+            <div class="col-lg-10">
+                <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                    <!-- Carousel Indicators -->
+                    <div class="carousel-indicators">
+                        {% for project in projects[:4] %}
+                        <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="{{ loop.index0 }}" 
+                                {% if loop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{ loop.index }}"></button>
+                        {% endfor %}
+                    </div>
+                    
+                    <!-- Carousel Items -->
+                    <div class="carousel-inner">
+                        {% for project in projects[:4] %}
+                        <div class="carousel-item {% if loop.first %}active{% endif %}" data-aos="fade-up">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 col-md-10">
+                                    <div class="project-card card h-100 border-0 shadow-sm">
+                                        <div class="project-image">
+                                            <img src="{{ project.image or url_for('static', filename='images/project-placeholder.jpg') }}" 
+                                                 class="card-img-top" alt="{{ project.title }}">
+                                            <div class="project-overlay">
+                                                <div class="project-links">
+                                                    {% if project.demo != '#' %}
+                                                    <a href="{{ project.demo }}" class="btn btn-primary btn-sm me-2" target="_blank">
+                                                        <i class="fas fa-external-link-alt me-1"></i>Demo
+                                                    </a>
+                                                    {% endif %}
+                                                    {% if project.github != '#' %}
+                                                    <a href="{{ project.github }}" class="btn btn-outline-light btn-sm" target="_blank">
+                                                        <i class="fab fa-github me-1"></i>Code
+                                                    </a>
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-semibold">{{ project.title }}</h5>
+                                            <p class="card-text text-muted">{{ project.description }}</p>
+                                            <div class="project-tech">
+                                                {% for tech in project.technologies %}
+                                                <span class="badge bg-primary-subtle text-primary me-1 mb-1">{{ tech }}</span>
+                                                {% endfor %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        {% endfor %}
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title fw-semibold">{{ project.title }}</h5>
-                        <p class="card-text text-muted">{{ project.description }}</p>
-                        <div class="project-tech">
-                            {% for tech in project.technologies %}
-                            <span class="badge bg-primary-subtle text-primary me-1 mb-1">{{ tech }}</span>
-                            {% endfor %}
-                        </div>
-                    </div>
+                    
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
-            {% endfor %}
         </div>
         <div class="row">
             <div class="col-12 text-center" data-aos="fade-up">
