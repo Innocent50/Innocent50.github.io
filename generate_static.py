@@ -3,7 +3,7 @@
 Generate static HTML files from Flask templates for GitHub Pages deployment
 """
 
-from app import app, PROFILE_DATA, SKILLS, EXPERIENCE, EDUCATION, PROJECTS
+from app import app, PROFILE_DATA, SKILLS, EXPERIENCE, EDUCATION, PROJECTS, PUBLICATIONS
 from flask import url_for
 import os
 import shutil
