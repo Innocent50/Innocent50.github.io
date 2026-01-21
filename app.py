@@ -129,7 +129,7 @@ PROJECTS = [
         'description': "This comprehensive platform integrates the Gender Equality and Social Inclusion (GESI) Index with advanced AI-driven simulation models to support Rwanda's NDC 3.0 implementation and climate action planning.",
         'technologies': ['Python', 'AI/ML', 'Simulation Modeling', 'Climate Policy'],
         'github': '#',
-        'demo': '#',
+        'demo': 'https://rwanda-ndc3-4556ecf1c038.herokuapp.com/',
         'image': '/static/images/Rwanda_NDC3.0.jpg'
     },
     {
@@ -145,32 +145,8 @@ PROJECTS = [
         'description': 'Advanced AI-driven simulation tool that assesses Sustainable Development Goal co-benefits using machine learning and statistical economic models for policy impact analysis',
         'technologies': ['Python', 'AI/ML', 'Economic Modeling', 'Policy Simulation'],
         'github': 'https://github.com/Innocent50/ai-simulation-tool',
-        'demo': 'https://ggindex-simtool.gggi.org/',
+        'demo': 'https://ggindex-simtool.gggi.org/SimulationDashBoard/simulation',
         'image': '/static/images/sim.jpg'
-    },
-    {
-        'title': 'Efficient Connected Components Solution Using DFS',
-        'description': 'Research project implementing efficient algorithms for connected components using Depth-First Search with optimized performance',
-        'technologies': ['Python', 'C/C++', 'Algorithm Design', 'Graph Theory'],
-        'github': 'https://github.com/Innocent50/connected-components-dfs',
-        'demo': '#',
-        'image': '/static/images/project3.jpg'
-    },
-    {
-        'title': 'National Green Growth Indexes (Kenya & Ghana)',
-        'description': 'Developed comprehensive national green growth assessment tools for Kenya and Ghana, measuring sustainability performance and policy effectiveness',
-        'technologies': ['Python', 'Statistical Analysis', 'Data Visualization', 'Policy Modeling'],
-        'github': 'https://github.com/Innocent50/national-green-indexes',
-        'demo': '#',
-        'image': '/static/images/project3.jpg'
-    },
-    {
-        'title': 'Learn Python for Machine Learning',
-        'description': 'Educational resource and tutorial series for learning Python programming with focus on machine learning applications',
-        'technologies': ['Python', 'Jupyter Notebooks', 'Machine Learning', 'Education'],
-        'github': 'https://github.com/Innocent50/python-ml-tutorial',
-        'demo': '#',
-        'image': '/static/images/project-placeholder.jpg'
     }
 ]
 
