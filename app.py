@@ -125,6 +125,14 @@ EDUCATION = [
 
 PROJECTS = [
     {
+        'title': 'Rwanda AI-Driven GESI Index & Simulation Tool',
+        'description': "This comprehensive platform integrates the Gender Equality and Social Inclusion (GESI) Index with advanced AI-driven simulation models to support Rwanda's NDC 3.0 implementation and climate action planning.",
+        'technologies': ['Python', 'AI/ML', 'Simulation Modeling', 'Climate Policy'],
+        'github': '#',
+        'demo': '#',
+        'image': '/static/images/Rwanda_NDC3.0.jpg'
+    },
+    {
         'title': 'Green Growth Index',
         'description': 'Interactive dashboard platform enabling policymakers to explore country performance in achieving sustainability targets including Sustainable Development Goals and Paris Climate Agreement',
         'technologies': ['Python', 'Data Visualization', 'Statistical Analysis', 'Web Development'],

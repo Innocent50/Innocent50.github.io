@@ -119,8 +119,8 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            {% for project in projects[:2] %}
-            <div class="col-lg-5 col-md-6 mb-4 mx-2" data-aos="fade-up" data-aos-delay="{{ loop.index0 * 100 }}">
+            {% for project in projects[:3] %}
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="{{ loop.index0 * 100 }}">
                 <div class="project-card card h-100 border-0 shadow-sm">
                     <div class="project-image">
                         <img src="{{ project.image or url_for('static', filename='images/project-placeholder.jpg') }}" 
