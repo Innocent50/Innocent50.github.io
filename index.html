@@ -89,34 +89,40 @@
     <main>
         
 <!-- Hero Section -->
-<section id="home" class="hero-section d-flex align-items-center min-vh-100 position-relative">
+<section id="home" class="hero-section d-flex align-items-center min-vh-100">
     <div class="hero-background"></div>
     <div class="container position-relative z-index-2">
         <div class="row align-items-center">
-            <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
-                <div class="hero-content text-white">
-                    <h1 class="hero-title display-3 fw-bold mb-4">
-                        Hi, I'm <span class="text-primary">Innocent Nzimenyera</span>
+            <div class="col-lg-7" data-aos="fade-right" data-aos-duration="1000">
+                <div class="hero-content">
+                    <div class="hero-badge badge bg-primary-subtle text-primary mb-3 px-3 py-2 rounded-pill shadow-sm border border-primary-subtle">
+                        <i class="fas fa-sparkles me-2"></i>Available for new opportunities
+                    </div>
+                    <h1 class="hero-title fw-bold">
+                        Building Scalable <span class="text-primary">Data Solutions</span> for Global Impact
                     </h1>
-                    <h2 class="hero-subtitle h3 mb-4 text-light-emphasis">AI and Data Analyst | Data Engineering Specialist</h2>
-                    <p class="hero-description lead mb-4">Digital and data leader with expertise in designing scalable data pipelines, managing databases, and building cloud-based architectures</p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary btn-lg me-3 mb-2">
-                            <i class="fas fa-eye me-2"></i>View My Work
+                    <h2 class="hero-subtitle mb-4">
+                        Hi, I'm Innocent — <span class="typing-text text-primary fw-bold"></span>
+                    </h2>
+                    <p class="hero-description mb-5">
+                        Digital and data leader with 5+ years of experience in AI, Data Engineering, and cloud-based architectures. Specializing in bridging data engineering with applied AI to drive strategic decision-making.
+                    </p>
+                    <div class="hero-buttons d-flex flex-wrap gap-3">
+                        <a href="#projects" class="btn btn-hero-primary text-white">
+                            <i class="fas fa-rocket me-2"></i>View My Portfolio
                         </a>
-                        <a href="contact.html" class="btn btn-outline-light btn-lg mb-2">
+                        <a href="contact.html" class="btn btn-hero-outline">
                             <i class="fas fa-envelope me-2"></i>Get In Touch
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                <div class="hero-image text-center">
+            <div class="col-lg-5" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                <div class="hero-image-wrapper text-center">
                     <div class="profile-image-container">
                         <img src="static/images/profile11.png" 
                              alt="Innocent Nzimenyera" 
-                             class="profile-image img-fluid rounded-circle shadow-lg">
-                        <div class="profile-image-border"></div>
+                             class="profile-image shadow-2xl">
                     </div>
                 </div>
             </div>
@@ -125,38 +131,76 @@
     
     <!-- Scroll Indicator -->
     <div class="scroll-indicator">
-        <a href="#about" class="scroll-link text-white">
-            <i class="fas fa-chevron-down fa-2x animate-bounce"></i>
+        <a href="#about" class="scroll-link">
+            <div class="mouse-icon">
+                <div class="wheel"></div>
+            </div>
+            <span class="mt-2 d-block small fw-bold">Scroll Down</span>
         </a>
     </div>
 </section>
 
 <!-- About Section -->
-<section id="about" class="py-5 bg-light">
+<section id="about" class="py-5">
     <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
-                <h2 class="section-title display-5 fw-bold mb-3">About Me</h2>
-                <p class="section-subtitle text-muted lead">Get to know me better</p>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Blending technical expertise with strategic vision</p>
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-lg-8 mb-4" data-aos="fade-up">
-                <div class="about-content text-center">
-                    <h3 class="h4 fw-semibold mb-4">AI and Data Analyst | Data Engineering Specialist</h3>
-                    <p class="text-muted mb-4">Digital and data leader with expertise in designing scalable data pipelines, managing databases, and building cloud-based architectures. Skilled in SQL, Python, and data integration to support advanced analytics and decision-making. Strong background in automation, ETL processes, and data governance with experience delivering solutions for international organizations, governments, and research institutions. Adept at bridging data engineering with applied AI and statistical methods to improve efficiency, data quality, and stakeholder impact.</p>
-                    
-                    <div class="about-stats row text-center mt-5">
-                        <div class="col-6">
-                            <div class="stat-item">
-                                <h4 class="stat-number text-primary fw-bold">50+</h4>
-                                <p class="stat-label text-muted small">PROJECTS COMPLETED</p>
+            <div class="col-lg-10" data-aos="fade-up">
+                <div class="about-card p-5 bg-white rounded-4 shadow-sm border border-light">
+                    <div class="row">
+                        <div class="col-lg-8 pe-lg-5">
+                            <h3 class="h3 fw-bold mb-4">Leveraging Data for Global Sustainability</h3>
+                            <p class="text-muted mb-4 fs-5">
+                                I am a digital and data leader with a passion for designing scalable data pipelines and building cloud-based architectures. My journey is defined by bridging the gap between complex data engineering and actionable AI-driven insights.
+                            </p>
+                            <p class="text-muted mb-5 fs-5">
+                                With a strong background in automation, ETL processes, and data governance, I've had the privilege of delivering high-impact solutions for international organizations, governments, and research institutions worldwide.
+                            </p>
+                            
+                            <div class="about-stats row g-4 mt-2">
+                                <div class="col-sm-4">
+                                    <div class="stat-item text-start">
+                                        <h4 class="stat-number">5+</h4>
+                                        <p class="stat-label">Years of Experience</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="stat-item text-start">
+                                        <h4 class="stat-number">50+</h4>
+                                        <p class="stat-label">Projects Delivered</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="stat-item text-start">
+                                        <h4 class="stat-number">10k+</h4>
+                                        <p class="stat-label">Lines of Code</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="stat-item">
-                                <h4 class="stat-number text-primary fw-bold">5+</h4>
-                                <p class="stat-label text-muted small">YEARS EXPERIENCE</p>
+                        <div class="col-lg-4 mt-4 mt-lg-0">
+                            <div class="info-list">
+                                <div class="info-item mb-3">
+                                    <span class="text-muted d-block small text-uppercase fw-bold">Current Role</span>
+                                    <span class="fw-semibold">AI and Data Analyst at GGGI</span>
+                                </div>
+                                <div class="info-item mb-3">
+                                    <span class="text-muted d-block small text-uppercase fw-bold">Education</span>
+                                    <span class="fw-semibold">MSc in IT, Carnegie Mellon</span>
+                                </div>
+                                <div class="info-item mb-3">
+                                    <span class="text-muted d-block small text-uppercase fw-bold">Location</span>
+                                    <span class="fw-semibold">Remote / South Korea</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="text-muted d-block small text-uppercase fw-bold">Languages</span>
+                                    <span class="fw-semibold">English, French, Kinyarwanda</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -171,162 +215,120 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
-                <h2 class="section-title display-5 fw-bold mb-3">Skills & Expertise</h2>
-                <p class="section-subtitle text-muted lead">Technologies and tools I work with</p>
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-subtitle">A comprehensive toolkit for data-driven excellence</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row g-4">
             
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="0">
-                <div class="skill-category card h-100 border-0 shadow-sm">
-                    <div class="card-body">
-                        <h4 class="card-title h5 fw-semibold mb-3 text-primary">
-                            <i class="fas fa-cog me-2"></i>Data Engineering &amp; Databases
-                        </h4>
-                        <div class="skill-tags">
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">SQL</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">PostgreSQL</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">Oracle</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">Access</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">Data Warehousing</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">ETL Pipelines</span>
-                            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                <div class="skill-category">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="icon-box bg-primary-subtle p-3 rounded-3 me-3 text-primary">
+                            <i class="fas fa-database fa-lg"></i>
                         </div>
+                        <h4 class="h5 fw-bold mb-0">Data Engineering</h4>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="badge">SQL</span>
+                        <span class="badge">PostgreSQL</span>
+                        <span class="badge">Oracle</span>
+                        <span class="badge">ETL Pipelines</span>
+                        <span class="badge">Data Warehousing</span>
+                        <span class="badge">Spark</span>
                     </div>
                 </div>
             </div>
             
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="skill-category card h-100 border-0 shadow-sm">
-                    <div class="card-body">
-                        <h4 class="card-title h5 fw-semibold mb-3 text-primary">
-                            <i class="fas fa-cog me-2"></i>Programming Languages
-                        </h4>
-                        <div class="skill-tags">
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">Python</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">JavaScript</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">Vue.js</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">C/C++</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">Java</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">R</span>
-                            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-category">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="icon-box bg-info-subtle p-3 rounded-3 me-3 text-info">
+                            <i class="fas fa-brain fa-lg"></i>
                         </div>
+                        <h4 class="h5 fw-bold mb-0">AI & Machine Learning</h4>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="badge">Python</span>
+                        <span class="badge">TensorFlow</span>
+                        <span class="badge">PyTorch</span>
+                        <span class="badge">Scikit-learn</span>
+                        <span class="badge">NLP</span>
+                        <span class="badge">CNNs/RNNs</span>
                     </div>
                 </div>
             </div>
             
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="skill-category card h-100 border-0 shadow-sm">
-                    <div class="card-body">
-                        <h4 class="card-title h5 fw-semibold mb-3 text-primary">
-                            <i class="fas fa-cog me-2"></i>Cloud &amp; Infrastructure
-                        </h4>
-                        <div class="skill-tags">
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">Linux</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">Git</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">Bash</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">Docker</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">GitHub/GitLab</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">Kubernetes</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">Spark</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">Terraform</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">AWS/GCP</span>
-                            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill-category">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="icon-box bg-success-subtle p-3 rounded-3 me-3 text-success">
+                            <i class="fas fa-chart-line fa-lg"></i>
                         </div>
+                        <h4 class="h5 fw-bold mb-0">Data Analytics</h4>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="badge">Tableau</span>
+                        <span class="badge">Power BI</span>
+                        <span class="badge">MATLAB</span>
+                        <span class="badge">Stata</span>
+                        <span class="badge">SPSS</span>
+                        <span class="badge">Advanced Excel</span>
                     </div>
                 </div>
             </div>
             
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="skill-category card h-100 border-0 shadow-sm">
-                    <div class="card-body">
-                        <h4 class="card-title h5 fw-semibold mb-3 text-primary">
-                            <i class="fas fa-cog me-2"></i>Analytics &amp; Visualization
-                        </h4>
-                        <div class="skill-tags">
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">Tableau</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">Power BI</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">MATLAB</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">Stata</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">SPSS</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">Advanced Excel</span>
-                            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="skill-category">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="icon-box bg-warning-subtle p-3 rounded-3 me-3 text-warning">
+                            <i class="fas fa-cloud fa-lg"></i>
                         </div>
+                        <h4 class="h5 fw-bold mb-0">Cloud & Devops</h4>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="badge">AWS/GCP</span>
+                        <span class="badge">Docker</span>
+                        <span class="badge">Kubernetes</span>
+                        <span class="badge">Terraform</span>
+                        <span class="badge">Git</span>
+                        <span class="badge">Linux / Bash</span>
                     </div>
                 </div>
             </div>
             
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="skill-category card h-100 border-0 shadow-sm">
-                    <div class="card-body">
-                        <h4 class="card-title h5 fw-semibold mb-3 text-primary">
-                            <i class="fas fa-cog me-2"></i>Machine Learning &amp; AI
-                        </h4>
-                        <div class="skill-tags">
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">TensorFlow</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">PyTorch</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">Scikit-learn</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">Keras</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">CNNs</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">RNNs</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">NLP</span>
-                            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="skill-category">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="icon-box bg-danger-subtle p-3 rounded-3 me-3 text-danger">
+                            <i class="fas fa-code fa-lg"></i>
                         </div>
+                        <h4 class="h5 fw-bold mb-0">Languages</h4>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="badge">Python</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">Vue.js</span>
+                        <span class="badge">C / C++</span>
+                        <span class="badge">Java</span>
+                        <span class="badge">R</span>
                     </div>
                 </div>
             </div>
             
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="500">
-                <div class="skill-category card h-100 border-0 shadow-sm">
-                    <div class="card-body">
-                        <h4 class="card-title h5 fw-semibold mb-3 text-primary">
-                            <i class="fas fa-cog me-2"></i>Languages
-                        </h4>
-                        <div class="skill-tags">
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">Kinyarwanda (Native)</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">English (Fluent)</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">French (Basic)</span>
-                            
-                            <span class="badge bg-light text-dark me-2 mb-2 px-3 py-2">Swahili (Basic)</span>
-                            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="skill-category">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="icon-box bg-dark-subtle p-3 rounded-3 me-3 text-dark">
+                            <i class="fas fa-globe fa-lg"></i>
                         </div>
+                        <h4 class="h5 fw-bold mb-0">Languages (Human)</h4>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="badge">English (Fluent)</span>
+                        <span class="badge">French (Basic)</span>
+                        <span class="badge">Kinyarwanda (Native)</span>
+                        <span class="badge">Swahili (Basic)</span>
                     </div>
                 </div>
             </div>
@@ -336,93 +338,79 @@
 </section>
 
 <!-- Projects Section -->
-<section id="projects" class="py-5 bg-light">
+<section id="projects" class="py-5 bg-light-subtle">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
-                <h2 class="section-title display-5 fw-bold mb-3">Featured Projects</h2>
-                <p class="section-subtitle text-muted lead">Some of my recent work</p>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Real-world impact through data and AI</p>
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row g-4 justify-content-center">
             
-            <div class="col-lg-5 col-md-6 mb-4 mx-2" data-aos="fade-up" data-aos-delay="0">
-                <div class="project-card card h-100 border-0 shadow-sm">
+            <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                <div class="project-card">
                     <div class="project-image">
                         <img src="static/images/green-growth-index.png" 
                              class="card-img-top" alt="Green Growth Index">
                         <div class="project-overlay">
                             <div class="project-links">
-                                
-                                <a href="https://ggindex-simtool.gggi.org/" class="btn btn-primary btn-sm me-2" target="_blank">
-                                    <i class="fas fa-external-link-alt me-1"></i>Demo
+                                <a href="https://ggindex-simtool.gggi.org/" class="btn btn-light btn-sm fw-bold px-3 py-2 rounded-pill shadow-sm" target="_blank">
+                                    <i class="fas fa-external-link-alt me-2"></i>Live Demo
                                 </a>
-                                
-                                <a href="https://github.com/Innocent50/green-growth-index" class="btn btn-outline-light btn-sm" target="_blank">
-                                    <i class="fab fa-github me-1"></i>Code
+                                <a href="https://github.com/Innocent50/green-growth-index" class="btn btn-outline-light btn-sm fw-bold px-3 py-2 rounded-pill" target="_blank">
+                                    <i class="fab fa-github me-2"></i>Source Code
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title fw-semibold">Green Growth Index</h5>
-                        <p class="card-text text-muted">Interactive dashboard platform enabling policymakers to explore country performance in achieving sustainability targets including Sustainable Development Goals and Paris Climate Agreement</p>
+                    <div class="p-4 bg-white">
+                        <h4 class="h5 fw-bold mb-3">Green Growth Performance Index</h4>
+                        <p class="text-muted small mb-4">A sophisticated dashboard platform enabling policymakers to explore country performance in achieving sustainability targets across various dimensions.</p>
                         <div class="project-tech">
-                            
-                            <span class="badge bg-primary-subtle text-primary me-1 mb-1">Python</span>
-                            
-                            <span class="badge bg-primary-subtle text-primary me-1 mb-1">Data Visualization</span>
-                            
-                            <span class="badge bg-primary-subtle text-primary me-1 mb-1">Statistical Analysis</span>
-                            
-                            <span class="badge bg-primary-subtle text-primary me-1 mb-1">Web Development</span>
-                            
+                            <span class="badge">Python</span>
+                            <span class="badge">Data Viz</span>
+                            <span class="badge">Analytics</span>
+                            <span class="badge">Cloud</span>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="col-lg-5 col-md-6 mb-4 mx-2" data-aos="fade-up" data-aos-delay="100">
-                <div class="project-card card h-100 border-0 shadow-sm">
+            <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-card">
                     <div class="project-image">
                         <img src="static/images/sim.jpg" 
-                             class="card-img-top" alt="AI-Supported Green Growth Simulation Tool">
+                             class="card-img-top" alt="AI Simulation Tool">
                         <div class="project-overlay">
                             <div class="project-links">
-                                
-                                <a href="https://ggindex-simtool.gggi.org/" class="btn btn-primary btn-sm me-2" target="_blank">
-                                    <i class="fas fa-external-link-alt me-1"></i>Demo
+                                <a href="https://ggindex-simtool.gggi.org/" class="btn btn-light btn-sm fw-bold px-3 py-2 rounded-pill shadow-sm" target="_blank">
+                                    <i class="fas fa-external-link-alt me-2"></i>Live Demo
                                 </a>
-                                
-                                <a href="https://github.com/Innocent50/ai-simulation-tool" class="btn btn-outline-light btn-sm" target="_blank">
-                                    <i class="fab fa-github me-1"></i>Code
+                                <a href="https://github.com/Innocent50/ai-simulation-tool" class="btn btn-outline-light btn-sm fw-bold px-3 py-2 rounded-pill" target="_blank">
+                                    <i class="fab fa-github me-2"></i>Source Code
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title fw-semibold">AI-Supported Green Growth Simulation Tool</h5>
-                        <p class="card-text text-muted">Advanced AI-driven simulation tool that assesses Sustainable Development Goal co-benefits using machine learning and statistical economic models for policy impact analysis</p>
+                    <div class="p-4 bg-white">
+                        <h4 class="h5 fw-bold mb-3">AI-Driven Simulation Framework</h4>
+                        <p class="text-muted small mb-4">Advanced ML-driven simulation tool that assesses Sustainable Development Goal co-benefits using statistical economic models for policy impact analysis.</p>
                         <div class="project-tech">
-                            
-                            <span class="badge bg-primary-subtle text-primary me-1 mb-1">Python</span>
-                            
-                            <span class="badge bg-primary-subtle text-primary me-1 mb-1">AI/ML</span>
-                            
-                            <span class="badge bg-primary-subtle text-primary me-1 mb-1">Economic Modeling</span>
-                            
-                            <span class="badge bg-primary-subtle text-primary me-1 mb-1">Policy Simulation</span>
-                            
+                            <span class="badge">ML / AI</span>
+                            <span class="badge">Python</span>
+                            <span class="badge">Modelling</span>
+                            <span class="badge">Policy</span>
                         </div>
                     </div>
                 </div>
             </div>
             
         </div>
-        <div class="row">
+        <div class="row mt-5">
             <div class="col-12 text-center" data-aos="fade-up">
-                <a href="projects.html" class="btn btn-outline-primary btn-lg">
-                    <i class="fas fa-plus me-2"></i>View All Projects
+                <a href="projects.html" class="btn btn-outline-primary btn-lg px-5 py-3 rounded-pill fw-bold">
+                    Explore All Projects <i class="fas fa-arrow-right ms-2"></i>
                 </a>
             </div>
         </div>
@@ -434,204 +422,49 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
-                <h2 class="section-title display-5 fw-bold mb-3">Experience</h2>
-                <p class="section-subtitle text-muted lead">My professional journey</p>
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">A journey of innovation and technical leadership</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <div class="timeline">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="modern-timeline">
                     
-                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="0">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content card border-0 shadow-sm">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-start mb-2">
-                                    <h5 class="card-title fw-semibold mb-1">AI and Data Analyst</h5>
-                                    <span class="badge bg-primary">Nov 2024 - Present</span>
+                    <div class="timeline-card mb-5" data-aos="fade-up">
+                        <div class="row g-0 border rounded-4 overflow-hidden shadow-sm bg-white">
+                            <div class="col-md-3 bg-light-subtle p-4 d-flex flex-column justify-content-center border-end">
+                                <span class="badge bg-primary rounded-pill mb-2">Nov 2024 - Present</span>
+                                <h6 class="fw-bold mb-0 text-dark">AI and Data Analyst</h6>
+                            </div>
+                            <div class="col-md-9 p-4">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="fw-bold text-primary mb-0">Global Green Growth Institute (GGGI)</h5>
+                                    <span class="small text-muted"><i class="fas fa-map-marker-alt me-1"></i>Seoul, South Korea (Remote)</span>
                                 </div>
-                                <h6 class="card-subtitle text-primary mb-2">Global Green Growth Institute (GGGI)</h6>
-                                <p class="text-muted small mb-3">
-                                    <i class="fas fa-map-marker-alt me-1"></i>Seoul, South Korea (Remote)
-                                </p>
-                                <ul class="list-unstyled">
-                                    
-                                    <li class="mb-2">
-                                        <i class="fas fa-check-circle text-success me-2"></i>
-                                        Designing and deploying dashboards enabling policymakers to explore the Green Growth Index
-                                    </li>
-                                    
-                                    <li class="mb-2">
-                                        <i class="fas fa-check-circle text-success me-2"></i>
-                                        Automating ETL pipelines to reduce manual data collection and improve efficiency
-                                    </li>
-                                    
-                                    <li class="mb-2">
-                                        <i class="fas fa-check-circle text-success me-2"></i>
-                                        Developing an online policy simulation model incorporating dozens of variables using statistical and AI-driven economic models
-                                    </li>
-                                    
-                                    <li class="mb-2">
-                                        <i class="fas fa-check-circle text-success me-2"></i>
-                                        Training team members on modeling, coding best practices, and reproducible pipelines
-                                    </li>
-                                    
-                                    <li class="mb-2">
-                                        <i class="fas fa-check-circle text-success me-2"></i>
-                                        Supporting publication of technical reports and policy briefs
-                                    </li>
-                                    
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Designing and deploying dashboards enabling policymakers to explore the Green Growth Index</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Automating ETL pipelines to reduce manual data collection and improve efficiency</li>
+                                    <li><i class="fas fa-check-circle text-primary me-2"></i>Developing AI-driven economic simulation models for global impact</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content card border-0 shadow-sm">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-start mb-2">
-                                    <h5 class="card-title fw-semibold mb-1">AI for Good Scholar</h5>
-                                    <span class="badge bg-primary">Apr 2024 - July 2025</span>
-                                </div>
-                                <h6 class="card-subtitle text-primary mb-2">United Nations/International Telecommunication Union (ITU)</h6>
-                                <p class="text-muted small mb-3">
-                                    <i class="fas fa-map-marker-alt me-1"></i>Geneva, Switzerland (Hybrid)
-                                </p>
-                                <ul class="list-unstyled">
-                                    
-                                    <li class="mb-2">
-                                        <i class="fas fa-check-circle text-success me-2"></i>
-                                        Conducted research on AI applications for UN Sustainable Development Goals
-                                    </li>
-                                    
-                                    <li class="mb-2">
-                                        <i class="fas fa-check-circle text-success me-2"></i>
-                                        Analyzed and improved AI use cases for global impact
-                                    </li>
-                                    
-                                    <li class="mb-2">
-                                        <i class="fas fa-check-circle text-success me-2"></i>
-                                        Collaborated with international use cases authors on AI projects
-                                    </li>
-                                    
-                                    <li class="mb-2">
-                                        <i class="fas fa-check-circle text-success me-2"></i>
-                                        Communicated findings and insights effectively to stakeholders
-                                    </li>
-                                    
-                                </ul>
+                    <div class="timeline-card mb-5" data-aos="fade-up">
+                        <div class="row g-0 border rounded-4 overflow-hidden shadow-sm bg-white">
+                            <div class="col-md-3 bg-light-subtle p-4 d-flex flex-column justify-content-center border-end">
+                                <span class="badge bg-primary rounded-pill mb-2">Apr 2024 - July 2025</span>
+                                <h6 class="fw-bold mb-0 text-dark">AI for Good Scholar</h6>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content card border-0 shadow-sm">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-start mb-2">
-                                    <h5 class="card-title fw-semibold mb-1">Data Science Consultant</h5>
-                                    <span class="badge bg-primary">June 2021 - Oct 2024</span>
+                            <div class="col-md-9 p-4">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="fw-bold text-primary mb-0">United Nations / ITU</h5>
+                                    <span class="small text-muted"><i class="fas fa-map-marker-alt me-1"></i>Geneva, Switzerland (Hybrid)</span>
                                 </div>
-                                <h6 class="card-subtitle text-primary mb-2">Global Green Growth Institute (GGGI)</h6>
-                                <p class="text-muted small mb-3">
-                                    <i class="fas fa-map-marker-alt me-1"></i>Seoul, South Korea (Remote)
-                                </p>
-                                <ul class="list-unstyled">
-                                    
-                                    <li class="mb-2">
-                                        <i class="fas fa-check-circle text-success me-2"></i>
-                                        Collaborated with GGPM Team to establish databases, tools, guidelines, and documentation
-                                    </li>
-                                    
-                                    <li class="mb-2">
-                                        <i class="fas fa-check-circle text-success me-2"></i>
-                                        Conducted data collection, analysis, and reporting for the Green Growth Index and Simulation Tool
-                                    </li>
-                                    
-                                    <li class="mb-2">
-                                        <i class="fas fa-check-circle text-success me-2"></i>
-                                        Built Python-based data pipelines to extract, clean, and integrate international datasets
-                                    </li>
-                                    
-                                    <li class="mb-2">
-                                        <i class="fas fa-check-circle text-success me-2"></i>
-                                        Applied statistical methods to enhance data quality and reliability
-                                    </li>
-                                    
-                                    <li class="mb-2">
-                                        <i class="fas fa-check-circle text-success me-2"></i>
-                                        Supported capacity-building workshops and conferences on data and analytics
-                                    </li>
-                                    
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="600">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content card border-0 shadow-sm">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-start mb-2">
-                                    <h5 class="card-title fw-semibold mb-1">Graduate Teaching Assistant</h5>
-                                    <span class="badge bg-primary">Aug 2023 - May 2024</span>
-                                </div>
-                                <h6 class="card-subtitle text-primary mb-2">Carnegie Mellon University</h6>
-                                <p class="text-muted small mb-3">
-                                    <i class="fas fa-map-marker-alt me-1"></i>Kigali, Rwanda
-                                </p>
-                                <ul class="list-unstyled">
-                                    
-                                    <li class="mb-2">
-                                        <i class="fas fa-check-circle text-success me-2"></i>
-                                        Assisted delivery of advanced data analytics courses using Python
-                                    </li>
-                                    
-                                    <li class="mb-2">
-                                        <i class="fas fa-check-circle text-success me-2"></i>
-                                        Supported students in data modeling, pipeline development, and coding assignments
-                                    </li>
-                                    
-                                    <li class="mb-2">
-                                        <i class="fas fa-check-circle text-success me-2"></i>
-                                        Implemented automated grading systems using AI algorithms
-                                    </li>
-                                    
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="800">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content card border-0 shadow-sm">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-start mb-2">
-                                    <h5 class="card-title fw-semibold mb-1">Digital Ambassador</h5>
-                                    <span class="badge bg-primary">Sept 2019 - June 2021</span>
-                                </div>
-                                <h6 class="card-subtitle text-primary mb-2">Rwanda Ministry of ICT and Innovation</h6>
-                                <p class="text-muted small mb-3">
-                                    <i class="fas fa-map-marker-alt me-1"></i>Kigali, Rwanda
-                                </p>
-                                <ul class="list-unstyled">
-                                    
-                                    <li class="mb-2">
-                                        <i class="fas fa-check-circle text-success me-2"></i>
-                                        Facilitated digital literacy training, increasing citizens access to online services
-                                    </li>
-                                    
-                                    <li class="mb-2">
-                                        <i class="fas fa-check-circle text-success me-2"></i>
-                                        Designed and updated ICT course content to meet community needs
-                                    </li>
-                                    
-                                    <li class="mb-2">
-                                        <i class="fas fa-check-circle text-success me-2"></i>
-                                        Created user-friendly reporting templates for use by government staff
-                                    </li>
-                                    
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Conducted research on AI applications for UN Sustainable Development Goals</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Collaborated with international use cases authors on AI projects</li>
+                                    <li><i class="fas fa-check-circle text-primary me-2"></i>Analyzing and improved AI use cases for global impact</li>
                                 </ul>
                             </div>
                         </div>
@@ -644,61 +477,45 @@
 </section>
 
 <!-- Education Section -->
-<section id="education" class="py-5 bg-light">
+<section id="education" class="py-5 bg-white">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
-                <h2 class="section-title display-5 fw-bold mb-3">Education</h2>
-                <p class="section-subtitle text-muted lead">Academic background</p>
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">A foundation of excellence from world-class institutions</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row g-4 justify-content-center">
             
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="0">
-                <div class="education-card card h-100 border-0 shadow-sm">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-start mb-3">
-                            <h5 class="card-title fw-semibold">Master of Science in Information Technology</h5>
-                            <span class="badge bg-primary">Aug 2022 - May 2024</span>
+            <div class="col-lg-5" data-aos="fade-up">
+                <div class="education-card h-100 p-4 rounded-4 bg-light shadow-sm">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="p-3 bg-primary text-white rounded-3 me-3">
+                            <i class="fas fa-graduation-cap fa-lg"></i>
                         </div>
-                        <h6 class="card-subtitle text-primary mb-2">Carnegie Mellon University</h6>
-                        <p class="text-muted small mb-2">
-                            <i class="fas fa-map-marker-alt me-1"></i>Kigali, Rwanda
-                        </p>
-                        <p class="card-text">Specialization in Applied Machine Learning and Data Science</p>
+                        <div>
+                            <h5 class="fw-bold mb-0">Master of Science in Information Technology</h5>
+                            <span class="text-primary small fw-bold">Aug 2022 - May 2024</span>
+                        </div>
                     </div>
+                    <h6 class="fw-bold mb-2">Carnegie Mellon University</h6>
+                    <p class="text-muted mb-0">Specialization in Applied Machine Learning and Data Science. Graduated with high honors.</p>
                 </div>
             </div>
             
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="education-card card h-100 border-0 shadow-sm">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-start mb-3">
-                            <h5 class="card-title fw-semibold">BSc (Hons) in Computer Science</h5>
-                            <span class="badge bg-primary">Sep 2015 - Nov 2019</span>
+            <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="education-card h-100 p-4 rounded-4 bg-light shadow-sm">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="p-3 bg-secondary text-white rounded-3 me-3">
+                            <i class="fas fa-university fa-lg"></i>
                         </div>
-                        <h6 class="card-subtitle text-primary mb-2">University of Rwanda, College of Science and Technology</h6>
-                        <p class="text-muted small mb-2">
-                            <i class="fas fa-map-marker-alt me-1"></i>Huye and Kigali, Rwanda
-                        </p>
-                        <p class="card-text">Focus on Computer Science and Software Engineering</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="education-card card h-100 border-0 shadow-sm">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-start mb-3">
-                            <h5 class="card-title fw-semibold">High School Certificate</h5>
-                            <span class="badge bg-primary">Sep 2012 - Nov 2014</span>
+                        <div>
+                            <h5 class="fw-bold mb-0">BSc (Hons) in Computer Science</h5>
+                            <span class="text-secondary small fw-bold">Sep 2015 - Nov 2019</span>
                         </div>
-                        <h6 class="card-subtitle text-primary mb-2">Group scolaire Remera Rukoma</h6>
-                        <p class="text-muted small mb-2">
-                            <i class="fas fa-map-marker-alt me-1"></i>Kamonyi, Rwanda
-                        </p>
-                        <p class="card-text">Mathematics, Physics, and Computer Science</p>
                     </div>
+                    <h6 class="fw-bold mb-2">University of Rwanda</h6>
+                    <p class="text-muted mb-0">Focus on Software Engineering and Core Computer Science principles.</p>
                 </div>
             </div>
             

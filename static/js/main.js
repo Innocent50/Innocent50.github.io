@@ -78,9 +78,9 @@
 
         const texts = [
             'Data Scientist',
+            'Data Engineering Specialist',
             'Machine Learning Engineer',
-            'Analytics Professional',
-            'Problem Solver'
+            'Analytics Professional'
         ];
         let textIndex = 0;
         let charIndex = 0;
