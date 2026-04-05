@@ -66,7 +66,8 @@ EXPERIENCE = [
         'title': 'Data Science Consultant',
         'company': 'Global Green Growth Institute (GGGI)',
         'duration': 'June 2021 - Oct 2024',
-        'location': 'Remote',
+        'location': 'Seoul, South Korea (Remote)',
+        #'location': 'Remote',
         'responsibilities': [
             'Collaborated with GGPM Team to establish databases, tools, guidelines, and documentation',
             'Conducted data collection, analysis, and reporting for the Green Growth Index and Simulation Tool',
