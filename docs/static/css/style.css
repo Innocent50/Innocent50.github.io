@@ -227,7 +227,7 @@ p {
 }
 
 .hero-title {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     line-height: 1.1;
     margin-bottom: 1.5rem;
     letter-spacing: -2px;
@@ -314,7 +314,7 @@ p {
 
 @media (max-width: 991.98px) {
     .hero-title {
-        font-size: 3rem;
+        font-size: 2.25rem;
         letter-spacing: -1px;
     }
 }
@@ -793,7 +793,7 @@ section {
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 991.98px) {
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     .profile-image {

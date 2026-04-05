@@ -33,7 +33,7 @@ SKILLS = {
     'Cloud & Infrastructure': ['Linux', 'Git', 'Bash', 'Docker', 'GitHub/GitLab', 'Kubernetes', 'Spark', 'Terraform', 'AWS/GCP'],
     'Analytics & Visualization': ['Tableau', 'Power BI', 'MATLAB', 'Stata', 'SPSS', 'Advanced Excel'],
     'Machine Learning & AI': ['TensorFlow', 'PyTorch', 'Scikit-learn', 'Keras', 'CNNs', 'RNNs', 'NLP'],
-    'Languages': ['Kinyarwanda (Native)', 'English (Fluent)', 'French (Basic)', 'Swahili (Basic)']
+    'Languages': ['Kinyarwanda (Native)', 'English (Fluent)', 'Swahili (Fluent)']
 }
 
 EXPERIENCE = [
