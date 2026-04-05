@@ -41,7 +41,7 @@ EXPERIENCE = [
         'title': 'AI and Data Analyst',
         'company': 'Global Green Growth Institute (GGGI)',
         'duration': 'Nov 2024 - Present',
-        'location': 'Seoul, South Korea (Remote)',
+        'location': 'Remote',
         'responsibilities': [
             'Designing and deploying dashboards enabling policymakers to explore the Green Growth Index',
             'Automating ETL pipelines to reduce manual data collection and improve efficiency',
@@ -66,7 +66,7 @@ EXPERIENCE = [
         'title': 'Data Science Consultant',
         'company': 'Global Green Growth Institute (GGGI)',
         'duration': 'June 2021 - Oct 2024',
-        'location': 'Seoul, South Korea (Remote)',
+        'location': 'Remote',
         'responsibilities': [
             'Collaborated with GGPM Team to establish databases, tools, guidelines, and documentation',
             'Conducted data collection, analysis, and reporting for the Green Growth Index and Simulation Tool',
