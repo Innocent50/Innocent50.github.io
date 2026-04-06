@@ -17,7 +17,7 @@ app.config['SECRET_KEY'] = 'your-secret-key-change-in-production'
 # Portfolio Data
 PROFILE_DATA = {
     'name': 'Innocent Nzimenyera',
-    'title': 'AI and Data Analyst | Data Engineering Specialist',
+    'title': 'AI and Data Analyst at GGGI',
     'tagline': 'Digital and data leader with expertise in designing scalable data pipelines, managing databases, and building cloud-based architectures',
     'bio': """Digital and data leader with expertise in designing scalable data pipelines, managing databases, and building cloud-based architectures. Skilled in SQL, Python, and data integration to support advanced analytics and decision-making. Strong background in automation, ETL processes, and data governance with experience delivering solutions for international organizations, governments, and research institutions. Adept at bridging data engineering with applied AI and statistical methods to improve efficiency, data quality, and stakeholder impact.""",
     'location': 'Kigali, Rwanda',
@@ -33,7 +33,7 @@ SKILLS = {
     'Cloud & Infrastructure': ['Linux', 'Git', 'Bash', 'Docker', 'GitHub/GitLab', 'Kubernetes', 'Spark', 'Terraform', 'AWS/GCP'],
     'Analytics & Visualization': ['Tableau', 'Power BI', 'MATLAB', 'Stata', 'SPSS', 'Advanced Excel'],
     'Machine Learning & AI': ['TensorFlow', 'PyTorch', 'Scikit-learn', 'Keras', 'CNNs', 'RNNs', 'NLP'],
-    'Languages': ['Kinyarwanda (Native)', 'English (Fluent)', 'Swahili (Fluent)']
+    'Languages': ['Kinyarwanda (Native)', 'English (Fluent)', 'Swahili (Basic)']
 }
 
 EXPERIENCE = [
@@ -67,7 +67,6 @@ EXPERIENCE = [
         'company': 'Global Green Growth Institute (GGGI)',
         'duration': 'June 2021 - Oct 2024',
         'location': 'Seoul, South Korea (Remote)',
-        #'location': 'Remote',
         'responsibilities': [
             'Collaborated with GGPM Team to establish databases, tools, guidelines, and documentation',
             'Conducted data collection, analysis, and reporting for the Green Growth Index and Simulation Tool',
